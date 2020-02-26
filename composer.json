@@ -1,0 +1,12 @@
+{
+    "require": {
+        "aws/aws-sdk-php": "^3.133",
+        "monolog/monolog": "^2.0",
+        "vlucas/phpdotenv": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Carteiro\\":"src/Carteiro/"
+        }
+    }
+}

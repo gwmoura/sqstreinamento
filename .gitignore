@@ -1,0 +1,4 @@
+vendor
+credentials.csv
+.env
+*.log
