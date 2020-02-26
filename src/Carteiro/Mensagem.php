@@ -12,11 +12,10 @@ class Mensagem
     {
         $newIdCorrelacao = uniqid($acao.'-');
         $this->atributos = new MensagemAtributoColecao();
+        $this->idCorrelacao = $newIdCorrelacao;
 
         if (!empty($idCorrelacao)) {
             $this->idCorrelacao = $idCorrelacao . '|' . $newIdCorrelacao;
-        } else {
-            $this->idCorrelacao = $newIdCorrelacao;
         }
 
         $atributo = new MensagemAtributo('IDCorrelacao', $this->idCorrelacao, MensagemAtributo::TEXTO);
